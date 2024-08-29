@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
+    // Toggle Navigation
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
 

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div class="logo">
                 <h1>Ailda Kamolli</h1>
@@ -20,18 +20,20 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" id="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
         </nav>
     </header>
-    
+
     <section id="home" class="hero-section">
         <div class="hero-content">
             <h2>Transform Your Body</h2>
-            <p>Achieve your dream physique with personalized training programs.</p>
+            <p>Achieve your dream physique with personalized training programs. <br>
+                Reshape yourself physically and spiritually become a butterfly 🦋 with me.<br>
+                A platform that will help you rebuild a strong and beautiful body and mind.</p>
             <a href="#contact" class="cta">Get Started</a>
         </div>
     </section>
@@ -39,13 +41,16 @@
     <section id="about" class="about-section">
         <div class="content">
             <h2>About Ailda</h2>
-            <p>Ailda is a certified personal trainer with over 10 years of experience in helping clients achieve their fitness goals.</p>
+            <p>Ailda is not only a skilled athlete and personal trainer, but she is also someone who will positively
+                impact people's lives by helping them through her knowledge of fitness to achieve their physical goals
+                and more. Her programs will develop a strong routine and discipline that will help you build more
+                confidence in yourself and achieve the desired results in a short period of time.</p>
         </div>
     </section>
 
     <section id="services" class="services-section">
         <div class="content">
-            <h2>Our Services</h2>
+            <h2>My Services</h2>
             <div class="services-list">
                 <div class="service-item">
                     <h3>Personal Training</h3>
@@ -59,19 +64,25 @@
                     <h3>Online Coaching</h3>
                     <p>Train with Ailda from anywhere in the world.</p>
                 </div>
+                <div class="service-item">
+                    <h3>Group Class Training</h3>
+                    <p>Experience the energy and motivation of working out in a supportive group environment, with
+                        expert-led sessions tailored to all fitness levels.</p>
+                </div>
             </div>
         </div>
     </section>
-
+    
     <section id="contact" class="contact-section">
         <div class="content">
             <h2>Contact Me</h2>
-            <form action="#" method="post">
+            <form id="contactForm" action="#" method="post">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            <div id="formMessage" class="hidden">Thank you for your message!</div>
         </div>
     </section>
 
