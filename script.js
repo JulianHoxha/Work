@@ -1,22 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+    const header = document.getElementById('header');
+    const logo = document.querySelector('.logo img'); // Select the logo image
 
-    // Toggle Navigation
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-
-        // Animate Links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-            }
-        });
-
-        // Burger Animation
-        burger.classList.toggle('toggle');
+    // Function to handle scrolling and add sticky class to header
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('sticky');  // Add 'sticky' class to header
+            logo.style.maxWidth = '100px';   // Shrink the logo size
+        } else {
+            header.classList.remove('sticky'); // Remove 'sticky' class when back to top
+            logo.style.maxWidth = '300px';     // Restore original logo size
+        }
     });
 });
